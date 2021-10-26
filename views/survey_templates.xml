@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+<!-- Message when the user already give an answer  -->
+    <template id="already" name="Survey already answered">
+        <t t-call="survey.layout">
+            <div class="wrap">
+                <div class="container">
+                    <div class="jumbotron mt32">
+                        <h1>Well done!</h1>
+                        <p>You already give an answer</p>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</data>
+</odoo>
