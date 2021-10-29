@@ -66,4 +66,4 @@ class CustomSurvey(Survey):
         # Controls if the survey can be displayed
         if survey.stage_id.closed:
             return request.render("survey.notopen")
-        return super(CustomSurvey, self).submit(survey)
+        return super(CustomSurvey, self).submit(survey, **post)
